@@ -2,6 +2,7 @@ import asyncio
 import os
 import json
 from telegram import Bot
+from telegram.constants import ParseMode
 
 TOKEN       = os.environ.get('BOT_TOKEN')
 
