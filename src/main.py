@@ -25,7 +25,7 @@ class Artifact(object):
     commit_id = str()
 
     def __str__(self):
-        return f'BUILD_MODE: { self.build_mode }\nBUILD_PLATFORM: { self.build_platform }\nBUILD_CHANNEL: { self.build_channel }\nBUILD_QEMU: { self.build_qemu }\n\nSHORT_COMMIT_ID: { self.commit_id[:7] }'
+        return f'BUILD_MODE: { self.build_mode }\nBUILD_PLATFORM: { self.build_platform }\nBUILD_CHANNEL: { self.build_channel }\nBUILD_QEMU: { 'yes' if self.build_qemu else 'no' }\n\nSHORT_COMMIT_ID: { self.commit_id[:7] }'
 
 
 def escape_special_chars(text):
